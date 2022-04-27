@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#ff6b22">
+    <!-- Your app title -->
+    <title>Stavtrack</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="framework7-bundle.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="my-app.css">
+    <link rel="stylesheet" href="framework7-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body class="color-theme-deeporange">
+    <!-- App root element -->
+    <div id="app">
+
+        <div class="appbar">
+            <div class="appbar-inner">
+              <div class="left">
+                <a href="#" class="button button-small button-outline panel-toggle display-flex" data-panel="left">
+                  <i class="f7-icons">menu</i>
+                </a>
+              </div>
+              <div class="stavtrack-logo">
+                <a href="/"><img src="/img/stavtrack.png" title="Главная страница STAVTRACK.RU" alt="СтавТРЭК - ГЛОНАСС/GPS мониторинг транспорта" width="140" ></a>
+            </div>
+              <div class="right">
+
+                <a href="#" class="col button button-outline panel-toggle display-flex appbar_contacts_button" data-panel="right">
+                    <!-- <p>Контакты </p> -->
+                    <i class="f7-icons">phone</i>
+                  </a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Rest of the app -->
+          <div class="panel panel-left panel-cover panel-init">
+            <div class="block">
+              <p>Panel left content</p>
+            </div>
+          </div>
+
+          <div class="panel panel-right panel-cover">
+            ... panel content goes here ...
+        </div>
+
+          <div class="view view-main view-init">
+            <div class="page">
+              <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                  <div class="title">Мониторинг транспорта в Ставрополе</div>
+                </div>
+              </div>
+              <div class="page-content">
+                <div class="card demo-card-header-pic">
+                    <div class="card-header card-header_banner align-items-flex-end"></div>
+                    <div class="card-content card-content-padding bold18">
+                      <p>Сократите затраты на автопарк до 30%, используя ГЛОНАСС/GPS технологии с пожизненной гарантией</p>
+                    </div>
+                    <div class="card-footer card-footer_banner ">
+                        <a href="#"><button class="col button button-large button-fill login-screen-open" data-login-screen=".login-screen">Зарегистрироваться</button></a>
+                  </div>
+                  <div class="login-screen">
+                    <div class="view">
+                      <div class="page">
+                        <div class="page-content login-screen-content">
+                          <div class="login-screen-title">Stavtrack Online</div>
+                          <form>
+                            <div class="list">
+                              <ul>
+                                <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label">Имя</div>
+                                    <div class="item-input-wrap">
+                                      <input type="text" name="username" placeholder="Ваше имя" />
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label">Номер телефона</div>
+                                    <div class="item-input-wrap">
+                                      <input type="tel" name="phone number" placeholder="Ваш номер телефона" />
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-title item-label">Электронная почта</div>
+                                      <div class="item-input-wrap">
+                                        <input type="email" name="email" placeholder="Ваша почта" />
+                                      </div>
+                                    </div>
+                                  </li>
+                              </ul>
+                            </div>
+                            <div class="list">
+                              <ul>
+                                <li><a class="list-button" href="#">Зарегистрироваться</a></li>
+                              </ul>
+                              <div class="block-footer">
+                                <p>Отправляя свои персональные данные, Вы даете согласие на их обработку и принимаете Пользовательское соглашение</p>
+                                <p><a class="link login-screen-close" href="#">Закрыть окно регистрации</a></p>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          
+        <div class="row no-gap" style="margin-bottom: 70px;">
+            <div class="col">
+              <div class="card card-banner_product">
+              <div class="card-content card-content-padding ">
+                <img src="/img/gps.png" style="margin-bottom: 26px;" alt="">
+               <p class="text-align-center bold14">gps терминалы</p>
+              </div>
+             
+            </div>
+            </div>
+         
+            <div class="col">
+              <div class="card card-banner_product">
+              <div class="card-content card-content-padding">
+                <img src="/img/dut.png" style="width: 80%;" alt="">
+                <p class="text-align-center bold14">Датчики топлива</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-banner_product">
+              <div class="card-content card-content-padding">
+                <img src="/img/server.png" alt="">
+                <p class='text-align-center bold14'>ПО для мониторинга</p>
+              </div>
+              </div>
+            </div>
+            
+        </div>
+          
+        <div class="block block-strong inset">
+      <div class="block-title text-align-center">Преимущества решения от Ставтрэк</div>
+      <div class="list accordion-list">
+        <ul>
+          <li class="accordion-item"><a class="item-content item-link" href="#">
+              <div class="item-inner">
+                <div class="item-title">
+                    <i class="f7-icons text-color-deeporange">arrow_2_circlepath_circle_fill</i>
+                    Пожизненная гарантия</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                Пожизненная гарантия на всё оборудование для мониторинга транспорта
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item"><a class="item-content item-link" href="#">
+              <div class="item-inner">
+                <div class="item-title">
+                      <i class="f7-icons text-color-deeporange">arrowshape_turn_up_left_fill</i>
+                    Гарантия возврата денег</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Вы экономите как минимум 10% на топливе, иначе мы вернем Вам деньги!</p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item"><a class="item-content item-link" href="#">
+              <div class="item-inner">
+                <div class="item-title">
+                    <i class="f7-icons text-color-deeporange">checkmark_alt_circle_fill</i>
+                    Попробуйте бесплатно</div>
+              </div>
+            </a>
+          
+              <div class="block">
+                <p class="text-align-center">Запишитесь на бесплатный тест-драйв</p>
+                <a href="#" class="col button button-large button-raised button-fill dynamic-sheet">Записаться</a>
+              </div>
+            
+          </li>
+        </ul>
+      </div><!-- Separate collapsibles - omit "accordion-list" class-->
+    </div>
+
+    <div class="block block-strong inset"> 
+      <p class="text-align-center m_h1">С чем сталкиваются 95% компаний, имеющих транспорт:</p>
+      
+      <div class="row no-gap">
+            <div class="card col-40">
+                <div class="card-content card-content-padding_problems">
+                    <div class="col-25">
+                        <img src="/img/icon1.png" alt="слив топлива">
+                    </div>
+                    <div class="col">Слив топлива из бака транспортного средства</div>
+                   </div>
+              </div>
+         
+        
+            <div class="card col-40">
+                <div class="card-content card-content-padding_problems">
+                    <div class="col-25">
+                        <img src="/img/icon5.png" alt="слив топлива">
+                    </div>
+                    <div class="col">Накручивание одометра</div>
+                   </div>
+               </div>
+      </div>
+         
+      <div class="row no-gap">
+            <div class="card col-40">
+                <div class="card-content card-content-padding_problems">
+                    <div class="col-25">
+                        <img src="/img/icon6.png" alt="слив топлива">
+                    </div>
+                    <div class="col">Использование авто в личных целях</div>
+                   </div>
+               </div>
+         
+         
+            <div class="card col-40">
+                <div class="card-content card-content-padding_problems">
+                    <div class="col-25">
+                        <img src="/img/icon7.png" alt="слив топлива">
+                    </div>
+                    <div class="col">Не «экономичный», часто опасный стиль вождения</div>
+                   </div>
+          </div>
+      </div>
+        
+      <div class="row no-gap">
+            <div class="card col-40">
+                <div class="card-content card-content-padding_problems">
+                    <div class="col-25">
+                        <img src="/img/icon8.png" alt="слив топлива">
+                    </div>
+                    <div class="col">«Левые» рейсы - работа на конкурентов</div>
+                   </div>
+               </div>
+        
+         
+            <div class="card col-40">
+                <div class="card-content card-content-padding_problems">
+                    <div class="col-25">
+                        <img src="/img/icon9.png" alt="слив топлива">
+                    </div>
+                    <div class="col">Нарушение скоростного режима</div>
+                   </div>
+               </div>
+              </div>
+        </div>
+     
+
+
+
+      <div class="m_h1 text-align-center">Почему 24025 Клиентов выбрали систему мониторинга от компании СтавТРЭК</div>
+      <div class="card card-expandable">
+        <div class="card-content">
+          <div class="bg-color-red" style="height: 300px">
+            <div class="card-header text-color-white display-block">Экономия топлива до 50%<br />
+              <small style="opacity: 0.7">Читать подробнее</small>
+            </div>
+            <a href="#" class="link card-close card-opened-fade-in color-white"
+              style="position: absolute; right: 15px; top: 15px">
+              <i class="icon f7-icons">xmark_circle_fill</i>
+            </a>
+          </div>
+          <div class="card-content-padding">
+            <p>Установив систему мониторинга транспорта и контроля расхода топлива Вы сэкономите
+                значительную часть расходов на приобретение топлива. Срок окупаемости от 2 до 12 месяцев.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-expandable">
+        <div class="card-content">
+          <div class="bg-color-yellow" style="height: 300px">
+            <div class="card-header text-color-black display-block">Контроль местоположения и маршрута<br />
+              <small style="opacity: 0.7">Читать подробнее</small>
+            </div>
+            <a href="#" class="link card-close card-opened-fade-in color-black"
+              style="position: absolute; right: 15px; top: 15px">
+              <i class="icon f7-icons">xmark_circle_fill</i>
+            </a>
+          </div>
+          <div class="card-content-padding">
+            <p>Установка ГЛОНАСС/GPS оборудования позволит знать Вам как текущее местоположение транспортного средства, 
+                так и весь маршрут за любой период в течении года</p>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+              <div class="block block-strong">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sagittis dui. Fusce nulla massa,
+                  scelerisque vitae auctor in, luctus in ipsum. Sed eu lectus vel magna malesuada lacinia. Ut at vestibulum
+                  sem. In semper, arcu pulvinar volutpat fermentum, felis magna fringilla felis, nec volutpat nisi nunc quis
+                  ante. Fusce elementum egestas tortor ut porta. Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Duis id commodo elit. Sed massa dui, laoreet a orci sed, egestas vehicula
+                  tellus. Nulla pulvinar ornare justo sed finibus. Aliquam hendrerit dui at nulla eleifend, quis feugiat
+                  enim aliquam. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.</p>
+              </div>
+
+              <div class="sheet-modal-inner">
+                <div class="block">
+                  <h4>Info</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac diam ac quam euismod porta vel a
+                    nunc. Quisque sodales scelerisque est, at porta justo cursus ac.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sheet-modal sheet-modal-top my-sheet-top">
+              <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner">
+                  <div class="left"></div>
+                  <div class="right"><a class="link sheet-close" href="#">Done</a></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="framework7-bundle.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="my-app.js"></script>
+    <script>
+        export default (props, ctx) => {
+          const { $ } = ctx;
+          // Login Screen-Modal DOM events
+          $('.login-screen').on('loginscreen:open', function (e) {
+            console.log('Login screen open')
+          });
+          $('.login-screen').on('loginscreen:opened', function (e) {
+            console.log('Login screen opened')
+          });
+          $('.login-screen').on('loginscreen:close', function (e) {
+            console.log('Login screen close')
+          });
+          $('.login-screen').on('loginscreen:closed', function (e) {
+            console.log('Login screen closed')
+          });
+
+          
+      
+          
+      
+          return $render;
+        }
+
+        
+        
+
+
+        
+      
+      </script>
+  </body>
+</html>

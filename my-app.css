@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Framework7 Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Framework7 Icons'), local('Framework7Icons-Regular'),
+    url('/fonts/Framework7Icons-Regular.woff2') format('woff2'), url('/fonts/Framework7Icons-Regular.woff')
+      format('woff'), url('/fonts/Framework7Icons-Regular.ttf') format('truetype');
+}
+
+.f7-icons,
+.framework7-icons {
+  font-family: 'Framework7 Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+}
+:root {
+    /*
+    --f7-appbar-offset: var(--f7-appbar-height);
+    --f7-appbar-extra-offset: 0px;
+    --f7-appbar-bg-color: var(--f7-bars-bg-color);
+    --f7-appbar-bg-color-rgb: var(--f7-bars-bg-color-rgb);
+    --f7-appbar-bg-image: var(--f7-bars-bg-image);
+    --f7-appbar-border-color: var(--f7-bars-border-color);
+    --f7-appbar-link-color: var(--f7-bars-link-color);
+    --f7-appbar-text-color: var(--f7-bars-text-color);
+    */
+    --f7-appbar-shadow-image: none;
+  }
+  .ios {
+    --f7-appbar-height: 44px;
+    --f7-appbar-inner-padding-left: 8px;
+    --f7-appbar-inner-padding-right: 8px;
+  }
+  .md {
+    --f7-appbar-height: 48px;
+    --f7-appbar-inner-padding-left: 16px;
+    --f7-appbar-inner-padding-right: 16px;
+  }
+  .aurora {
+    --f7-appbar-height: 64px;
+    --f7-appbar-inner-padding-left: 16px;
+    --f7-appbar-inner-padding-right: 16px;
+  }
+
+  .demo-card-header-pic .card-header_banner {
+    height: 78vw;
+    background-image:url(/img/top-banner.png);
+  }  
+
+  .card-header {
+    height: 42vw;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    
+  }
+
+
+  .bold18 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .card-footer_banner {
+    display: block;
+  } 
+
+  .card-header_product {
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .swiper-banner {
+    height: 350px;
+  }
+
+  .card-content-padding_problems {
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    height: 115px;
+  }
+
+  .m_h1 {
+font-size: 20px;
+font-weight: 700;
+  }
+
+  .card-banner_product {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+  }
+
+  .card-banner_product img {
+    width: 100%;
+  }
+
+  .bold14 {
+    font-weight: 500;
+    font-size: 14px;
+  }
