@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   </head>
-  <body class="color-theme-deeporange">
+  <body>
     <!-- App root element -->
     <div id="app">
 
@@ -52,260 +52,518 @@
             ... panel content goes here ...
         </div>
 
-          <div class="view view-main view-init">
-            <div class="page">
-              <div class="navbar">
-                <div class="navbar-bg"></div>
-                <div class="navbar-inner">
-                  <div class="title">Мониторинг транспорта в Ставрополе</div>
-                </div>
+        <div class="view view-main view-init">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="title">Мониторинг транспорта в Ставрополе</div>
               </div>
-              <div class="page-content">
-                <div class="card demo-card-header-pic">
-                    <div class="card-header card-header_banner align-items-flex-end"></div>
-                    <div class="card-content card-content-padding bold18">
-                      <p>Сократите затраты на автопарк до 30%, используя ГЛОНАСС/GPS технологии с пожизненной гарантией</p>
-                    </div>
-                    <div class="card-footer card-footer_banner ">
-                        <a href="#"><button class="col button button-large button-fill login-screen-open" data-login-screen=".login-screen">Зарегистрироваться</button></a>
+            </div>
+
+
+
+              <div class="toolbar tabbar-labels toolbar-bottom">
+                  <div class="toolbar-inner">
+                      <a href="#tab-1" class="tab-link tab-link-active">
+                          <i class="icon f7-icons if-not-md">person_alt_circle</i>
+                          <i class="icon material-icons md-only">account_circle</i>
+                          <span class="tabbar-label">Личный кабинет</span>
+                      </a>
+                      <a href="#tab-2" class="tab-link">
+                          <i class="icon f7-icons if-not-md">square_stack_3d_up_fill<span class="badge color-red">5</span></i>
+                          <i class="icon material-icons md-only">apps<span class="badge color-red">5</span></i>
+                          <span class="tabbar-label">Решения</span>
+                      </a>
+                      <a href="#tab-3" class="tab-link">
+                          <i class="icon f7-icons if-not-md">money_rubl_circle</i>
+                          <i class="icon material-icons md-only">currency_ruble</i>
+                          <span class="tabbar-label">Стоимость</span>
+                      </a>
                   </div>
-                  <div class="login-screen">
-                    <div class="view">
-                      <div class="page">
-                        <div class="page-content login-screen-content">
-                          <div class="login-screen-title">Stavtrack Online</div>
-                          <form>
-                            <div class="list">
-                              <ul>
-                                <li class="item-content item-input">
+              </div>
+
+
+
+              <div class="page-content hide-toolbar-on-scroll hide-navbar-on-scroll">
+              <div class="card demo-card-header-pic">
+                  <div class="card-header card-header_banner align-items-flex-end"></div>
+                  <div class="card-content card-content-padding bold18">
+                    <p>Сократите затраты на автопарк до 30%, используя ГЛОНАСС/GPS технологии с пожизненной гарантией</p>
+                  </div>
+                  <div class="card-footer card-footer_banner ">
+                      <a href="#"><button class="col button button-large button-fill login-screen-open" data-login-screen=".login-screen">Зарегистрироваться</button></a>
+                </div>
+                <div class="login-screen">
+                  <div class="view">
+                    <div class="page">
+                      <div class="page-content login-screen-content">
+                        <div class="login-screen-title">Stavtrack Online</div>
+                        <form>
+                          <div class="list">
+                            <ul>
+                              <li class="item-content item-input">
+                                <div class="item-inner">
+                                  <div class="item-title item-label">Имя</div>
+                                  <div class="item-input-wrap">
+                                    <input type="text" name="username" placeholder="Ваше имя" />
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="item-content item-input">
+                                <div class="item-inner">
+                                  <div class="item-title item-label">Номер телефона</div>
+                                  <div class="item-input-wrap">
+                                    <input type="tel" name="phone number" placeholder="Ваш номер телефона" />
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="item-content item-input">
                                   <div class="item-inner">
-                                    <div class="item-title item-label">Имя</div>
+                                    <div class="item-title item-label">Электронная почта</div>
                                     <div class="item-input-wrap">
-                                      <input type="text" name="username" placeholder="Ваше имя" />
+                                      <input type="email" name="email" placeholder="Ваша почта" />
                                     </div>
                                   </div>
                                 </li>
-                                <li class="item-content item-input">
-                                  <div class="item-inner">
-                                    <div class="item-title item-label">Номер телефона</div>
-                                    <div class="item-input-wrap">
-                                      <input type="tel" name="phone number" placeholder="Ваш номер телефона" />
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="item-content item-input">
-                                    <div class="item-inner">
-                                      <div class="item-title item-label">Электронная почта</div>
-                                      <div class="item-input-wrap">
-                                        <input type="email" name="email" placeholder="Ваша почта" />
-                                      </div>
-                                    </div>
-                                  </li>
-                              </ul>
+                            </ul>
+                          </div>
+                          <div class="list">
+                            <ul>
+                              <li><a class="list-button" href="#">Зарегистрироваться</a></li>
+                            </ul>
+                            <div class="block-footer">
+                              <p>Отправляя свои персональные данные, Вы даете согласие на их обработку и принимаете Пользовательское соглашение</p>
+                              <p><a class="link login-screen-close" href="#">Закрыть окно регистрации</a></p>
                             </div>
-                            <div class="list">
-                              <ul>
-                                <li><a class="list-button" href="#">Зарегистрироваться</a></li>
-                              </ul>
-                              <div class="block-footer">
-                                <p>Отправляя свои персональные данные, Вы даете согласие на их обработку и принимаете Пользовательское соглашение</p>
-                                <p><a class="link login-screen-close" href="#">Закрыть окно регистрации</a></p>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
-              </div>
-          
-        <div class="row no-gap" style="margin-bottom: 70px;">
-            <div class="col">
-              <div class="card card-banner_product">
-              <div class="card-content card-content-padding ">
-                <img src="img/gps.png" style="margin-bottom: 26px;" alt="">
-               <p class="text-align-center bold14">gps терминалы</p>
-              </div>
-             
+                </div>
             </div>
+        
+      <div class="row no-gap" style="margin-bottom: 70px;">
+          <div class="col">
+            <div class="card card-banner_product">
+            <div class="card-content card-content-padding ">
+              <img src="img/gps.png" style="margin-bottom: 26px;" alt="">
+             <p class="text-align-center bold14">gps терминалы</p>
             </div>
-         
-            <div class="col">
-              <div class="card card-banner_product">
-              <div class="card-content card-content-padding">
-                <img src="img/dut.png" style="width: 80%;" alt="">
-                <p class="text-align-center bold14">Датчики топлива</p>
-              </div>
+           
+          </div>
+          </div>
+       
+          <div class="col">
+            <div class="card card-banner_product">
+            <div class="card-content card-content-padding">
+              <img src="img/dut.png" style="width: 80%;" alt="">
+              <p class="text-align-center bold14">Датчики топлива</p>
             </div>
-            </div>
+          </div>
+          </div>
 
-            <div class="col">
-              <div class="card card-banner_product">
-              <div class="card-content card-content-padding">
-                <img src="img/server.png" alt="">
-                <p class='text-align-center bold14'>ПО для мониторинга</p>
-              </div>
-              </div>
+          <div class="col">
+            <div class="card card-banner_product">
+            <div class="card-content card-content-padding">
+              <img src="img/server.png" alt="">
+              <p class='text-align-center bold14'>ПО для мониторинга</p>
             </div>
-            
-        </div>
+            </div>
+          </div>
           
-        <div class="block block-strong inset">
-      <div class="block-title text-align-center">Преимущества решения от Ставтрэк</div>
-      <div class="list accordion-list">
-        <ul>
-          <li class="accordion-item"><a class="item-content item-link" href="#">
-              <div class="item-inner">
-                <div class="item-title">
-                    <i class="f7-icons text-color-deeporange">arrow_2_circlepath_circle_fill</i>
-                    Пожизненная гарантия</div>
-              </div>
-            </a>
-            <div class="accordion-item-content">
-              <div class="block">
-                Пожизненная гарантия на всё оборудование для мониторинга транспорта
-              </div>
-            </div>
-          </li>
-          <li class="accordion-item"><a class="item-content item-link" href="#">
-              <div class="item-inner">
-                <div class="item-title">
-                      <i class="f7-icons text-color-deeporange">arrowshape_turn_up_left_fill</i>
-                    Гарантия возврата денег</div>
-              </div>
-            </a>
-            <div class="accordion-item-content">
-              <div class="block">
-                <p>Вы экономите как минимум 10% на топливе, иначе мы вернем Вам деньги!</p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion-item"><a class="item-content item-link" href="#">
-              <div class="item-inner">
-                <div class="item-title">
-                    <i class="f7-icons text-color-deeporange">checkmark_alt_circle_fill</i>
-                    Попробуйте бесплатно</div>
-              </div>
-            </a>
-          
-              <div class="block">
-                <p class="text-align-center">Запишитесь на бесплатный тест-драйв</p>
-                <a href="#" class="col button button-large button-raised button-fill dynamic-sheet">Записаться</a>
-              </div>
-            
-          </li>
-        </ul>
-      </div><!-- Separate collapsibles - omit "accordion-list" class-->
+      </div>
+
+
+
+
+      <div class="block block-strong inset">
+        <div class="block-title text-align-center">Преимущества решения от Ставтрэк</div>
+        <div class="list accordion-list">
+            <ul>
+                <li class="accordion-item"><a class="item-content item-link" href="#">
+                        <div class="item-inner">
+                            <div class="item-title">
+                                <i class="f7-icons text-color-primary">arrow_2_circlepath_circle_fill</i>
+                                Пожизненная гарантия</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="block">
+                            Пожизненная гарантия на всё оборудование для мониторинга транспорта
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item"><a class="item-content item-link" href="#">
+                        <div class="item-inner">
+                            <div class="item-title">
+                                <i class="f7-icons text-color-primary">arrowshape_turn_up_left_fill</i>
+                                Гарантия возврата денег</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="block">
+                            <p>Вы экономите как минимум 10% на топливе, иначе мы вернем Вам деньги!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item"><a class="item-content item-link" href="#">
+                        <div class="item-inner">
+                            <div class="item-title">
+                                <i class="f7-icons text-color-primary">checkmark_alt_circle_fill</i>
+                                Попробуйте бесплатно</div>
+                        </div>
+                    </a>
+    
+                    <div class="block">
+                        <p class="text-align-center">Запишитесь на бесплатный тест-драйв</p>
+                        <a href="#" class="col button button-large button-raised button-fill dynamic-sheet">Записаться</a>
+                    </div>
+    
+                </li>
+            </ul>
+        </div><!-- Separate collapsibles - omit "accordion-list" class-->
     </div>
 
-    <div class="block block-strong inset"> 
-      <p class="text-align-center m_h1">С чем сталкиваются 95% компаний, имеющих транспорт:</p>
-      
-      <div class="row no-gap">
-            <div class="card col-40">
-                <div class="card-content card-content-padding_problems">
-                    <div class="col-25">
-                        <img src="img/icon1.png" alt="слив топлива">
-                    </div>
-                    <div class="col">Слив топлива из бака транспортного средства</div>
-                   </div>
+
+
+
+
+
+    <div class="block block-strong inset">
+      <p class="text-align-center block-title">С чем сталкиваются 95% компаний, <br>имеющих транспорт:</p>
+  
+  
+  <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="20" data-slides-per-view="2"
+       class="swiper swiper-init demo-swiper" style="height: 195px">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+              <div class="card col-35 card_problems">
+                  <div class="card-content card-content-padding_problems">
+                      <div class="col-25">
+                          <img src="img/icon-4.png" alt="слив топлива">
+                      </div>
+                      <div class="col">Слив топлива из бака</div>
+                  </div>
               </div>
-         
-        
-            <div class="card col-40">
-                <div class="card-content card-content-padding_problems">
-                    <div class="col-25">
-                        <img src="img/icon5.png" alt="слив топлива">
-                    </div>
-                    <div class="col">Накручивание одометра</div>
-                   </div>
-               </div>
-      </div>
-         
-      <div class="row no-gap">
-            <div class="card col-40">
-                <div class="card-content card-content-padding_problems">
-                    <div class="col-25">
-                        <img src="img/icon6.png" alt="слив топлива">
-                    </div>
-                    <div class="col">Использование авто в личных целях</div>
-                   </div>
-               </div>
-         
-         
-            <div class="card col-40">
-                <div class="card-content card-content-padding_problems">
-                    <div class="col-25">
-                        <img src="img/icon7.png" alt="слив топлива">
-                    </div>
-                    <div class="col">Не «экономичный», часто опасный стиль вождения</div>
-                   </div>
           </div>
-      </div>
-        
-      <div class="row no-gap">
-            <div class="card col-40">
-                <div class="card-content card-content-padding_problems">
-                    <div class="col-25">
-                        <img src="img/icon8.png" alt="слив топлива">
-                    </div>
-                    <div class="col">«Левые» рейсы - работа на конкурентов</div>
-                   </div>
-               </div>
-        
-         
-            <div class="card col-40">
-                <div class="card-content card-content-padding_problems">
-                    <div class="col-25">
-                        <img src="img/icon9.png" alt="слив топлива">
-                    </div>
-                    <div class="col">Нарушение скоростного режима</div>
-                   </div>
-               </div>
+  
+          <div class="swiper-slide">
+              <div class="card col-35">
+                  <div class="card-content card-content-padding_problems">
+                      <div class="col-25">
+                          <img src="img/icon-5.png" alt="слив топлива">
+                      </div>
+                      <div class="col">Накручивание одометра</div>
+                  </div>
               </div>
-        </div>
-     
-
-
-
-      <div class="m_h1 text-align-center">Почему 24025 Клиентов выбрали систему мониторинга от компании СтавТРЭК</div>
-      <div class="card card-expandable">
-        <div class="card-content">
-          <div class="bg-color-red" style="height: 300px">
-            <div class="card-header text-color-white display-block">Экономия топлива до 50%<br />
-              <small style="opacity: 0.7">Читать подробнее</small>
-            </div>
-            <a href="#" class="link card-close card-opened-fade-in color-white"
-              style="position: absolute; right: 15px; top: 15px">
-              <i class="icon f7-icons">xmark_circle_fill</i>
-            </a>
           </div>
-          <div class="card-content-padding">
-            <p>Установив систему мониторинга транспорта и контроля расхода топлива Вы сэкономите
-                значительную часть расходов на приобретение топлива. Срок окупаемости от 2 до 12 месяцев.</p>
+  
+          <div class="swiper-slide">
+              <div class="card col-35">
+                  <div class="card-content card-content-padding_problems">
+                      <div class="col-25">
+                          <img src="img/icon-6.png" alt="слив топлива">
+                      </div>
+                      <div class="col">Использование авто в личных целях</div>
+                  </div>
+              </div>
           </div>
-        </div>
+  
+          <div class="swiper-slide">
+              <div class="card col-35">
+                  <div class="card-content card-content-padding_problems">
+                      <div class="col-25">
+                          <img src="img/icon-7.png" alt="слив топлива">
+                      </div>
+                      <div class="col">Не «экономичный», часто опасный стиль вождения</div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="swiper-slide">
+              <div class="card col-35">
+                  <div class="card-content card-content-padding_problems">
+                      <div class="col-25">
+                          <img src="img/icon-8.png" alt="слив топлива">
+                      </div>
+                      <div class="col">«Левые» рейсы - работа на конкурентов</div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="swiper-slide">
+              <div class="card col-35">
+                  <div class="card-content card-content-padding_problems">
+                      <div class="col-25">
+                          <img src="img/icon-9.png" alt="слив топлива">
+                      </div>
+                      <div class="col">Нарушение скоростного режима</div>
+                  </div>
+              </div>
+          </div>
+  
+  
       </div>
+  </div>
+  </div>
+  
+  
+  
+  
 
-      <div class="card card-expandable">
-        <div class="card-content">
-          <div class="bg-color-yellow" style="height: 300px">
-            <div class="card-header text-color-black display-block">Контроль местоположения и маршрута<br />
-              <small style="opacity: 0.7">Читать подробнее</small>
-            </div>
-            <a href="#" class="link card-close card-opened-fade-in color-black"
-              style="position: absolute; right: 15px; top: 15px">
-              <i class="icon f7-icons">xmark_circle_fill</i>
-            </a>
+
+
+  <div class="m_h1 text-align-center">Почему 24025 Клиентов выбрали систему мониторинга от компании СтавТРЭК</div>
+  <div class="row no-gap">
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content card-tablet-fullscreen" style="width: 38vw">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r1.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px; line-height: 16px">Экономия топлива до 50%<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>Установив систему мониторинга транспорта и контроля расхода топлива Вы сэкономите
+                      значительную часть расходов на приобретение топлива. Срок окупаемости от 2 до 12 месяцев.</p>
+              </div>
           </div>
-          <div class="card-content-padding">
-            <p>Установка ГЛОНАСС/GPS оборудования позволит знать Вам как текущее местоположение транспортного средства, 
-                так и весь маршрут за любой период в течении года</p>
-          </div>
-        </div>
       </div>
-      
+  
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content" style="width: 38vw; height: 38vw;">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r2.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px;line-height: 16px">Контроль местоположения и маршрута<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>Установка ГЛОНАСС/GPS оборудования позволит знать Вам как текущее местоположение транспортного средства,
+                      так и весь маршрут за любой период в течении года</p>
+              </div>
+          </div>
+      </div>
+  
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content" style="width: 38vw; height: 38vw;">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r4.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px; line-height: 16px">Полный контроль топлива<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>Датчики уровня топлива позволяют иметь полную картину о топливе. Вы будете знать время,
+                      место и объем сливов и заправок, общее потребление топлива, средний расход в час и на 100 км.</p>
+              </div>
+          </div>
+      </div>
+  
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content" style="width: 38vw; height: 38vw;">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r5.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px; line-height: 16px">Пожизненная гарантия на оборудование<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>На все оборудование для контроля ТС и датчики уровня топлива мы предлагаем гарантию на весь срок эксплуатации.
+                      Работоспособность системы будет поддерживаться без дополнительных затрат</p>
+              </div>
+          </div>
+      </div>
+  
+  
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content" style="width: 38vw; height: 38vw;">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r3.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px;line-height: 16px">Контроль скоростного режима<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>Система мониторинга в связке с авто трекером позволит пресечь одну из главных проблем компаний, имеющих транспорт - превышения скорости.
+                      Превышения отображаются как в отчетах, так и в режиме онлайн</p>
+              </div>
+          </div>
+      </div>
+  
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content" style="width: 38vw; height: 38vw;">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r6.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px;line-height: 16px">Бесплатный тест-драйв<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>Для подтверждения необходимости внедрения системы ГЛОНАСС/GPS мониторинга и контроля расхода топлива,
+                      мы предлагаем Вам услугу бесплатного тестирования оборудования</p>
+                  <button>записаться</button>
+              </div>
+          </div>
+      </div>
+  
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content" style="width: 38vw; height: 38vw;">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r7.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px; line-height: 16px">Единая сервисная
+                      служба<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>Наша компания имеет офисы по всей России. В случае поломки нашего
+                      оборудования, мы окажем техническую помощь в любом из наших сервисов и Ваш транспорт всегда будет под контролем!</p>
+              </div>
+          </div>
+      </div>
+  
+      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+          <div class="card-content" style="width: 38vw; height: 38vw;">
+              <div class="bg-color-white justify-content-center display-flex flex-direction-column">
+                  <img class="align-self-center" src="img/r8.png" alt="" style="width: 62px;">
+                  <div class="card-header text-color-black display-block text-align-center" style="font-size: 14px; line-height: 16px">Контроль прохождения
+                      ТО<br />
+                      <small style="opacity: 0.7">Читать подробнее</small>
+                  </div>
+                  <a href="#" class="link card-close card-opened-fade-in color-black"
+                     style="position: absolute; right: 15px; top: 15px">
+                      <i class="icon f7-icons">xmark_circle_fill</i>
+                  </a>
+              </div>
+              <div class="card-content-padding">
+                  <p>Система слежения от компании Ставтрэк напомнит Вам когда необходимо будет провести техническое обслуживание,
+                      какие работы требуются. Ваши транспортные средства, будут всегда в хорошем техническом состоянии</p>
+              </div>
+          </div>
+      </div>
+  
+  </div>
 
+
+  <div class="block">
+
+    <div class="block-title block-title-medium text-align-center">Чьи проблемы решает <br> спутниковый мониторинг</div>
+
+   <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="20" data-slides-per-view="1"
+        class="swiper swiper-init demo-swiper" style="height: 370px">
+       <div class="swiper-pagination"></div>
+       <div class="swiper-wrapper">
+
+           <div class="swiper-slide">
+
+                   <div class="card">
+                       <div style="background-image:url(img/1.png)"
+                            class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                           </div>
+                       <div class="card-content card-content-padding">
+                           <p class="date text-align-center">От 1-го транспортного средства</p>
+                           <p class="bold18">Физические лица</p>
+                       </div>
+
+                       <div class="card-footer">
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Подробнее</button></a>
+
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Стоимость</button></a>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="swiper-slide">
+                   <div class="card">
+                       <div style="background-image:url(img/2.png)"
+                            class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                       </div>
+                       <div class="card-content card-content-padding">
+                           <p class="date text-align-center">менее 20 ТС</p>
+                           <p class="bold18">Микро и малый бизнес</p>
+                       </div>
+
+                       <div class="card-footer">
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Подробнее</button></a>
+
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Стоимость</button></a>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="swiper-slide">
+                   <div class="card">
+                       <div style="background-image:url(img/3.png)"
+                            class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                       </div>
+                       <div class="card-content card-content-padding">
+                           <p class="date text-align-center">от 20 до 100 ТС</p>
+                           <p class="bold18">Средний бизнес</p>
+                       </div>
+
+                       <div class="card-footer">
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Подробнее</button></a>
+
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Стоимость</button></a>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="swiper-slide">
+                   <div class="card">
+                       <div style="background-image:url(img/4.png)"
+                            class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                       </div>
+                       <div class="card-content card-content-padding">
+                           <p class="date text-align-center">более 100 ТС</p>
+                           <p class="bold18">Крупный бизнес</p>
+                       </div>
+
+                       <div class="card-footer">
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Подробнее</button></a>
+
+                           <a href="#" class="link"> <button class="col button button-small button-fill">Стоимость</button></a>
+                       </div>
+                   </div>
+           </div>
+</div>
+   </div>
+</div>
+
+  
 
 
               <div class="block block-strong">

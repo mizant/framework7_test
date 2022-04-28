@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Framework7 Icons'), local('Framework7Icons-Regular'),
-    url('fonts/Framework7Icons-Regular.woff2') format('woff2'), url('fonts/Framework7Icons-Regular.woff')
-      format('woff'), url('fonts/Framework7Icons-Regular.ttf') format('truetype');
+    url('/node_modules/framework7/fonts/Framework7Icons-Regular.woff2') format('woff2'), url('/node_modules/framework7/fonts/Framework7Icons-Regular.woff')
+      format('woff'), url('/node_modules/framework7/fonts/Framework7Icons-Regular.ttf') format('truetype');
 }
 
 .f7-icons,
@@ -40,6 +40,10 @@
     --f7-appbar-text-color: var(--f7-bars-text-color);
     */
     --f7-appbar-shadow-image: none;
+  --f7-theme-color: #f78d1d;
+  --f7-theme-color-rgb: 247, 141, 29;
+  --f7-theme-color-shade: #e37908;
+  --f7-theme-color-tint: #f8a144;
   }
   .ios {
     --f7-appbar-height: 44px;
@@ -117,3 +121,23 @@ font-weight: 700;
     font-weight: 500;
     font-size: 14px;
   }
+
+  .why-chose_card {
+    width: 140px;
+    height: 140px;
+  }
+
+.card-header_why-chose .card-header_why-chose {
+    font-size: 14px;
+    text-align: center;
+
+  }
+
+.why-chose_img {
+  height: 300px;
+}
+
+.card-whose-problems {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
