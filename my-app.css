@@ -141,3 +141,8 @@ font-weight: 700;
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.industry-component_img {
+  width: 45px;
+}
+
