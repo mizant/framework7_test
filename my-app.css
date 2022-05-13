@@ -7,6 +7,7 @@
       format('woff'), url('/node_modules/framework7/fonts/Framework7Icons-Regular.ttf') format('truetype');
 }
 
+
 .f7-icons,
 .framework7-icons {
   font-family: 'Framework7 Icons';
@@ -44,6 +45,7 @@
   --f7-theme-color-rgb: 247, 141, 29;
   --f7-theme-color-shade: #e37908;
   --f7-theme-color-tint: #f8a144;
+  --f7-page-bg-color: #fff;
   }
   .ios {
     --f7-appbar-height: 44px;
@@ -61,7 +63,16 @@
     --f7-appbar-inner-padding-right: 16px;
   }
 
-  .demo-card-header-pic .card-header_banner {
+  .box-shadow {
+    box-shadow: 0px 6px 8px 7px rgba(0, 0, 0, 0.2);
+  }
+
+.panel-left {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+  .card-header-pic .card-header_banner {
     height: 78vw;
     background-image:url(img/top-banner.png);
   }  
@@ -73,6 +84,20 @@
     color: rgb(0, 0, 0);
     
   }
+
+.bold15 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.bold12 {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 14px;
+}
 
 
   .bold18 {
@@ -109,7 +134,7 @@ font-weight: 700;
 
   .card-banner_product {
     width: 100px;
-    height: 100px;
+    height: 125px;
     padding: 0;
   }
 
@@ -145,4 +170,118 @@ font-weight: 700;
 .industry-component_img {
   width: 45px;
 }
+
+.card-content-padding_competence {
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  height: 100px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.nps-card {
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.card-review .card-header {
+  display: block;
+  padding: 10px;
+  height: 18vw;
+}
+
+.card-review .card-review-avatar {
+  float: left;
+  margin-right: 15px;
+}
+
+.card-review .card-review-name {
+  margin-left: 44px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-review .card-review-date {
+  margin-left: 44px;
+  font-size: 13px;
+  color: #8e8e93;
+}
+
+.card-review .card-footer {
+  background: #fafafa;
+}
+
+.card-review .card-footer a {
+  color: #81848b;
+  font-weight: 500;
+}
+
+.card-review .card-content img {
+  display: block;
+}
+
+.card-review .card-content-padding {
+  padding: 15px 10px;
+}
+
+.card-review .card-content-padding .likes {
+  color: #8e8e93;
+}
+
+.swiper-review {
+  height: 320px;
+}
+
+.button-phone {
+  width: 90%;
+}
+
+.button-messenger {
+  width: 60%;
+  margin: 15px auto;
+}
+
+i.icon.icon-whatsApp,i.icon.icon-telegram,
+i.icon.icon-viber {
+  width:20px;
+  height:20px;
+  border-radius:6px;
+}
+i.icon.icon-whatsApp {
+  background-image: url(/img/btn-wathapp.png);
+}
+
+i.icon.icon-viber {
+  background-image:url(/img/btn-viber.png);
+}
+
+i.icon.icon-telegram {
+  background-image:url(/img/btn-telegram.png);
+}
+
+
+.bg-color-lightgray {
+  --f7-theme-color-bg-color: #f8f8f9;
+}
+
+.choose-town-list {
+  margin-top: 0;
+}
+
+.block-town-list {
+  margin: 5px 0;
+}
+
+.footer-contacts-phone {
+  font-size: 12px;
+  justify-content: center;
+}
+
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="my-app.css">
     <link rel="stylesheet" href="framework7-icons.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  </head>
-  <body>
+rel="stylesheet">
+</head>
+<body>
+
+
     <!-- App root element -->
     <div id="app">
 
@@ -39,31 +41,60 @@
                   </a>
               </div>
             </div>
-          </div>
+</div>
         
-          <!-- Rest of the app -->
-          <div class="panel panel-left panel-cover panel-init">
+<!-- Rest of the app -->
+<div class="panel panel-left panel-cover panel-init">
             <div class="block">
               <p>Panel left content</p>
             </div>
-          </div>
+</div>
 
-          <div class="panel panel-right panel-cover">
-            ... panel content goes here ...
+<div class="panel panel-right panel-init panel-cover bg-color-lightgray color-theme-primary">
+
+    <div class="card box-shadow padding">
+        <div class="card-content bold15 text-align-center margin-bottom"> <i class="icon f7-icons size-50">phone_circle</i>  Позвонить:</div>
+        <a href="tel:88005054023" class="col button button-fill margin-horizontal color-orange button-phone">8 800 505 40 23</a>
+        <p class="text-align-center text-color-gray footer-contacts-phone">Звонок по России бесплатный</p>
+    </div>
+
+    <div class="card box-shadow padding no-padding-top">
+        <div class="flex-direction-column card-content display-flex justify-content-center">
+            <div class="card-header card-whose-problems bold14 text-align-center" style="height: 16vw; justify-content: center">
+                <i class="icon f7-icons size-50 margin-right">chat_bubble_text</i> Написать:
+            </div>
         </div>
 
+        <a href="whatsapp://send?phone=+79187908360" class="button button-fill color-orange margin-bottom"><i class="icon icon-whatsApp margin-right"></i> WhatsApp</a>
+        <a href="viber://chat?number=+79187908360" class=" button button-fill color-orange margin-bottom"><i class="icon icon-viber margin-right"></i>Viber</a>
+        <a href="tg://resolve?domain=stavtrack_111" class=" button button-fill color-orange"><i class="icon icon-telegram margin-right"></i>Telegram</a>
+    </div>
+
+    <div class="card box-shadow padding">
+        <div class="card-content bold15 text-align-center"> Оставить заявку на звонок в удобное время</div>
+        <div class="flex-direction-column card-content display-flex justify-content-center">
+            <div onclick="myApp.showModal('calltoorder', {form_label: 'заказать звонок контакты'});"
+                 class="button button-fill color-orange button-phone margin-top" id="contacts-button-call" style="margin: 0 auto;">Заказать звонок</div>
+        </div>
+    </div>
+</div>
+
+
+
+
         <div class="view view-main view-init">
-          <div class="page">
+<div class="page">
+
             <div class="navbar">
-              <div class="navbar-bg"></div>
-              <div class="navbar-inner">
+<div class="navbar-bg"></div>
+<div class="navbar-inner">
                 <div class="title">Мониторинг транспорта в Ставрополе</div>
-              </div>
+</div>
             </div>
 
 
 
-              <div class="toolbar tabbar-labels toolbar-bottom">
+<div class="toolbar tabbar-labels toolbar-bottom">
                   <div class="toolbar-inner">
                       <a href="#tab-1" class="tab-link tab-link-active">
                           <i class="icon f7-icons if-not-md">person_alt_circle</i>
@@ -81,12 +112,12 @@
                           <span class="tabbar-label">Стоимость</span>
                       </a>
                   </div>
-              </div>
+</div>
 
 
 
-              <div class="page-content hide-toolbar-on-scroll hide-navbar-on-scroll">
-              <div class="card demo-card-header-pic">
+<div class="page-content hide-toolbar-on-scroll hide-navbar-on-scroll">
+              <div class="card card-header-pic box-shadow">
                   <div class="card-header card-header_banner align-items-flex-end"></div>
                   <div class="card-content card-content-padding bold18">
                     <p>Сократите затраты на автопарк до 30%, используя ГЛОНАСС/GPS технологии с пожизненной гарантией</p>
@@ -144,11 +175,11 @@
                 </div>
             </div>
         
-      <div class="row no-gap" style="margin-bottom: 70px;">
+      <div class="row no-gap">
           <div class="col">
-            <div class="card card-banner_product">
+            <div class="card card-banner_product box-shadow">
             <div class="card-content card-content-padding ">
-              <img src="img/gps.png" style="margin-bottom: 26px;" alt="">
+              <img src="img/gps.png" alt="">
              <p class="text-align-center bold14">gps терминалы</p>
             </div>
            
@@ -156,19 +187,19 @@
           </div>
        
           <div class="col">
-            <div class="card card-banner_product">
+            <div class="card card-banner_product box-shadow">
             <div class="card-content card-content-padding">
-              <img src="img/dut.png" style="width: 80%;" alt="">
+              <img src="img/dut.png" style="width: 50%; margin: auto; display: flex;" alt="">
               <p class="text-align-center bold14">Датчики топлива</p>
             </div>
           </div>
           </div>
 
           <div class="col">
-            <div class="card card-banner_product">
+            <div class="card card-banner_product box-shadow">
             <div class="card-content card-content-padding">
-              <img src="img/server.png" alt="">
-              <p class='text-align-center bold14'>ПО для мониторинга</p>
+              <img src="img/server.png" alt="" style="width: 75%; margin: auto; display: flex;">
+              <p class='text-align-center bold12'>ПО для мониторинга</p>
             </div>
             </div>
           </div>
@@ -178,7 +209,7 @@
 
 
 
-      <div class="block block-strong inset">
+      <div class="block block-strong inset box-shadow">
         <div class="block-title text-align-center">Преимущества решения от Ставтрэк</div>
         <div class="list accordion-list">
             <ul>
@@ -233,15 +264,13 @@
 
     <div class="block block-strong inset">
       <p class="text-align-center block-title">С чем сталкиваются 95% компаний, <br>имеющих транспорт:</p>
-  
-  
   <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="20" data-slides-per-view="2"
        class="swiper swiper-init demo-swiper" style="height: 195px">
       <div class="swiper-pagination"></div>
       <div class="swiper-wrapper">
   
           <div class="swiper-slide">
-              <div class="card col-35 card_problems">
+              <div class="card col-35 card_problems box-shadow">
                   <div class="card-content card-content-padding_problems">
                       <div class="col-25">
                           <img src="img/icon-4.png" alt="слив топлива">
@@ -252,7 +281,7 @@
           </div>
   
           <div class="swiper-slide">
-              <div class="card col-35">
+              <div class="card col-35 box-shadow">
                   <div class="card-content card-content-padding_problems">
                       <div class="col-25">
                           <img src="img/icon-5.png" alt="слив топлива">
@@ -263,7 +292,7 @@
           </div>
   
           <div class="swiper-slide">
-              <div class="card col-35">
+              <div class="card col-35 box-shadow">
                   <div class="card-content card-content-padding_problems">
                       <div class="col-25">
                           <img src="img/icon-6.png" alt="слив топлива">
@@ -274,7 +303,7 @@
           </div>
   
           <div class="swiper-slide">
-              <div class="card col-35">
+              <div class="card col-35 box-shadow">
                   <div class="card-content card-content-padding_problems">
                       <div class="col-25">
                           <img src="img/icon-7.png" alt="слив топлива">
@@ -285,7 +314,7 @@
           </div>
   
           <div class="swiper-slide">
-              <div class="card col-35">
+              <div class="card col-35 box-shadow">
                   <div class="card-content card-content-padding_problems">
                       <div class="col-25">
                           <img src="img/icon-8.png" alt="слив топлива">
@@ -296,7 +325,7 @@
           </div>
   
           <div class="swiper-slide">
-              <div class="card col-35">
+              <div class="card col-35 box-shadow">
                   <div class="card-content card-content-padding_problems">
                       <div class="col-25">
                           <img src="img/icon-9.png" alt="слив топлива">
@@ -311,15 +340,12 @@
   </div>
   </div>
   
-  
-  
-  
 
 
 
   <div class="m_h1 text-align-center">Почему 24025 Клиентов выбрали систему мониторинга от компании СтавТРЭК</div>
   <div class="row no-gap">
-      <div class="card card-expandable why-chose_card card-expandable-animate-width">
+      <div class="card card-expandable why-chose_card card-expandable-animate-width box-shadow">
           <div class="card-content card-tablet-fullscreen" style="width: 38vw">
               <div class="bg-color-white justify-content-center display-flex flex-direction-column">
                   <img class="align-self-center" src="img/r1.png" alt="" style="width: 62px;">
@@ -474,7 +500,6 @@
               </div>
           </div>
       </div>
-  
   </div>
 
 
@@ -489,7 +514,7 @@
 
            <div class="swiper-slide">
 
-                   <div class="card">
+                   <div class="card box-shadow">
                        <div style="background-image:url(img/1.png)"
                             class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                            </div>
@@ -507,7 +532,7 @@
            </div>
 
            <div class="swiper-slide">
-                   <div class="card">
+                   <div class="card box-shadow">
                        <div style="background-image:url(img/2.png)"
                             class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                        </div>
@@ -525,7 +550,7 @@
            </div>
 
            <div class="swiper-slide">
-                   <div class="card">
+                   <div class="card box-shadow">
                        <div style="background-image:url(img/3.png)"
                             class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                        </div>
@@ -543,7 +568,7 @@
            </div>
 
            <div class="swiper-slide">
-                   <div class="card">
+                   <div class="card box-shadow">
                        <div style="background-image:url(img/4.png)"
                             class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                        </div>
@@ -563,7 +588,7 @@
    </div>
 </div>
 
-<div class="block block-strong inset">
+<div class="block block-strong inset box-shadow">
     <div class="block-title text-align-center">Готовые отраслевые решения</div>
     <div class="list accordion-list">
         <ul>
@@ -980,6 +1005,22 @@
         </div>
     </div>
 
+</div>
+
+
+
+    <div class="block-title">Мы всегда рядом:</div>
+    <div class="block block-strong inset box-shadow">
+    <p>Офис компании расположен в городе Ставрополь. Установка систем спутникового мониторинга осуществляется на всей территории Ставропольского края,
+        в том числе в крупнейших населенных пунктах: Пятигорске, Кисловодске, Ессентуках, Минеральных Водах, Невинномысске, Георгиевске, Изобильном,
+        Светлограде, Благодарном, Буденновске, Зеленокумске, Новоалександровске, Нефтекумске.</p>
+
+    <p>Так же офисы наших партнеров Вы можете найти и во многих других регионах Российской федерации.
+    </p>
+    </div>
+
+    <div class="block block-strong inset text-align-center box-shadow bg-color-primary text-color-white">
+    Неважно, где находится Ваша техника, в лице нашей компании Вы получите надежного партнера на долгие годы!
     </div>
 
 
@@ -994,7 +1035,7 @@
     
                 <div class="swiper-slide">
     
-                    <div class="card">
+                    <div class="card box-shadow">
                         <div style="background-image:url(img/w1.png)"
                              class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                         </div>
@@ -1006,7 +1047,7 @@
                 </div>
     
                 <div class="swiper-slide">
-                    <div class="card">
+                    <div class="card box-shadow">
                         <div style="background-image:url(img/w2.png)"
                              class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                         </div>
@@ -1017,7 +1058,7 @@
                 </div>
     
                 <div class="swiper-slide">
-                    <div class="card">
+                    <div class="card box-shadow">
                         <div style="background-image:url(img/w3.png)"
                              class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                         </div>
@@ -1029,7 +1070,7 @@
                 </div>
     
                 <div class="swiper-slide">
-                    <div class="card">
+                    <div class="card box-shadow">
                         <div style="background-image:url(img/w4.png)"
                              class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
                         </div>
@@ -1039,49 +1080,630 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
+<div class="block-title block-title-medium text-align-center">Также мы имеем компетенции <br> в следующих сферах:</div>
 
-    <div class="block-title">Мы всегда рядом:</div>
-    <div class="block block-strong inset">
-    <p>Офис компании расположен в городе Ставрополь. Установка систем спутникового мониторинга осуществляется на всей территории Ставропольского края,
-        в том числе в крупнейших населенных пунктах: Пятигорске, Кисловодске, Ессентуках, Минеральных Водах, Невинномысске, Георгиевске, Изобильном,
-        Светлограде, Благодарном, Буденновске, Зеленокумске, Новоалександровске, Нефтекумске.</p>
+<div class="block block-strong inset no-padding-horizontal" style="height: 220px;">
+    <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="5" data-direction="vertical" class="swiper swiper-init">
+        <div class="swiper-pagination" style="right: 0;"></div>
+        
+        <div class="swiper-wrapper" style="height: 220px;">
 
-    <p>Так же офисы наших партнеров Вы можете найти и во многих других регионах Российской федерации.
-    </p>
-    </div>
-
-    <div class="block block-strong inset text-align-center">
-    Неважно, где находится Ваша техника, в лице нашей компании Вы получите надежного партнера на долгие годы!
-    </div>
-
-
-
-
-  
-
-
-              <div class="block block-strong">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sagittis dui. Fusce nulla massa,
-                  scelerisque vitae auctor in, luctus in ipsum. Sed eu lectus vel magna malesuada lacinia. Ut at vestibulum
-                  sem. In semper, arcu pulvinar volutpat fermentum, felis magna fringilla felis, nec volutpat nisi nunc quis
-                  ante. Fusce elementum egestas tortor ut porta. Vestibulum ante ipsum primis in faucibus orci luctus et
-                  ultrices posuere cubilia Curae; Duis id commodo elit. Sed massa dui, laoreet a orci sed, egestas vehicula
-                  tellus. Nulla pulvinar ornare justo sed finibus. Aliquam hendrerit dui at nulla eleifend, quis feugiat
-                  enim aliquam. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                  ridiculus mus.</p>
-              </div>
-
-              <div class="sheet-modal-inner">
-                <div class="block">
-                  <h4>Info</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac diam ac quam euismod porta vel a
-                    nunc. Quisque sodales scelerisque est, at porta justo cursus ac.</p>
+            <div class="swiper-slide">
+                <div class="row no-gap">
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-1.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Глонасс мониторинг транспорта</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+                    </div>
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-2.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Установка цифровых тахографов</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+                    </div>
                 </div>
-              </div>
             </div>
+            <div class="swiper-slide">
+                <div class="row no-gap">
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-10.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Видеонаблюдение на транспорте</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-9.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Контроль расхода топлива</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row no-gap">
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-3.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Карты для тахографа</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-4.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Системы параллельного вождения</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row no-gap">
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-5.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Автомобильные GPS трекеры</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-6.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Персональные трекеры</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row no-gap">
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-7.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Переоборудование под ДОПОГ</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-8.png" alt="слив топлива">
+                            </div>
+                            <div class="col">ГЛОНАСС/GPS отслеживание грузов</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row no-gap">
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-11.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Системы контроля давления в шинах</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-12.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Парктроники для грузовых автомобилей</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row no-gap">
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-13.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Мониторинг Iridium</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                    <div class="card col-40 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-25">
+                                <img src="img/additional-icon-14.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Мониторинг КРС</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row no-gap" style="justify-content: center">
+                    <div class="card col-70 card_problems  box-shadow">
+                        <div class="card-content card-content-padding_competence">
+                            <div class="col-50">
+                                <img src="img/additional-icon-15.png" alt="слив топлива">
+                            </div>
+                            <div class="col">Мониторинг международных перевозок</div>
+                        </div>
+                        <p class="col padding-horizontal no-margin-vertical">
+                            <button class="col button button-small button-outline mb-5">Подробнее</button>
+                            <button class="col button button-small button-fill mb-5">Стоимость</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div data-speed="900" data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
+class="swiper swiper-init demo-swiper" style="height: 610px;">
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="block-title block-title-medium text-align-center">
+                Нас готовы рекомендовать
+            </div>
+            <div class="card box-shadow">
+                <div class="card-content card-content-padding bold15 margin text-align-center"> Каждый месяц мы измеряем индекс лояльности наших Клиентов, задавая один важный вопрос:</div>
+                <div class="block block-strong inset bg-color-primary margin-horizontal nps-card">
+                    "Оцените от 1 до 10 готовность рекомендовать нашу компанию Друзьям"
+                    <i class="icon f7-icons size-50">question_circle</i>
+                </div>
+
+                <div class="card-header card-whose-problems bold14 text-align-center flex-direction-column" style="height: 28vw">
+                    В январе 2022 года   <span style="color: #f78d1d; font-size: 16px">1000 компаний и физ. лиц</span>   стали нашими Клиентами.
+                </div>
+                <div class="card-content card-content-padding display-flex justify-content-center">
+                    <div
+                            class="gauge gauge-init my-gauge"
+                            data-type="circle"
+                            data-value="0.8"
+                            data-label-text="NPS"
+                            data-value-text="80"
+                            data-value-text-color="#f78d1d"
+                            data-border-color="#f78d1d"
+                    ></div>
+                </div>
+                <div class="card-footer">
+                    <span>В январе 2022 г.</span>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="block-title block-title-medium text-align-center">Как считается NPS?</div>
+            <div class="card box-shadow">
+                <img src="img/nps.png" class="margin-top" style="width: 100%;" alt="nps">
+                <div class="card-content">
+                    <div class="list media-list no-ios-edges">
+                        <ul>
+                            <li class="item-content">
+                                <div class="item-media">
+                                    <i class="icon f7-icons color-lightblue" style="font-size: 40px;">person_crop_circle_badge_checkmark</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Промоутеры</div>
+                                    </div>
+                                    <div class="item-subtitle">79%</div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-media">
+                                    <i class="icon f7-icons color-yellow" style="font-size: 40px;">person_crop_circle</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Нейтралы</div>
+                                    </div>
+                                    <div class="item-subtitle">20%</div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-media">
+                                    <i class="icon f7-icons color-red" style="font-size: 40px;">person_crop_circle_badge_xmark</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Критики</div>
+                                    </div>
+                                    <div class="item-subtitle">1%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-footer"> <span>В январе 2022 г.</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="block-title  block-title-medium text-align-center margin-bottom">Отзывы наших клиентов</div>
+
+<div data-speed="900" data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
+class="swiper swiper-init swiper-review">
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide">
+            <div class="card card-review box-shadow">
+            <div class="card-header card-header-review ">
+                <div class="card-review-avatar box-shadow align-items-center"><img src="/img/logo100-region55.jpg"
+                                                                                   width="50" height="50" /></div>
+                <div class="card-review-name">Сергей Мирошкин</div>
+                <div class="card-review-date">Директор ООО "Регион 55"</div>
+            </div>
+            <div class="card-content card-content-padding" style="font-style: italic">
+                От лица организации хочу поблагодарить всех сотрудников ООО
+                «СТАВТРЭК ОМСК» за оперативность, качество и индивидуальный подход к клиенту.
+                Уверен, что наше деловое, дружеское и взаимовыгодное партнерство продлится
+                долгие годы!
+            </div>
+        </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card card-review box-shadow">
+                <div class="card-header card-header-review ">
+                    <div class="card-review-avatar box-shadow align-items-center"><img src="/img/mts_logo.png"
+                                                                                       width="50" height="50" /></div>
+                    <div class="card-review-name">Владимир Владимирович</div>
+                    <div class="card-review-date">Административный директор ОАО "МТС" в Ставропольском крае</div>
+                </div>
+                <div class="card-content card-content-padding" style="font-style: italic">
+                    Добросовестный и эффективный труд компетентных специалистов
+                    компании «Ставтрэк» позволил нашей компании оперативно и качественно решать
+                    технические, информационные и сервисные вопросы по обслуживанию наших
+                    объектов.
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card card-review box-shadow">
+                <div class="card-header card-header-review ">
+                    <div class="card-review-avatar box-shadow align-items-center"><img src="/img/invent-servise.png"
+                                                                                       width="50" height="50" /></div>
+                    <div class="card-review-name">Ахмадуллин А.А.</div>
+                    <div class="card-review-date">Генеральный директор ООО «Инвент сервис»</div>
+                </div>
+                <div class="card-content card-content-padding" style="font-style: italic">
+                    Сотрудники компании ООО «Ставтрэк» показали себя как
+                    добросовестные профессионалы, которые всегда оперативно реагируют на любую
+                    внештатную ситуацию.
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card card-review box-shadow">
+                <div class="card-header card-header-review ">
+                    <div class="card-review-avatar box-shadow align-items-center"><img src="/img/millenium-logo.jpg"
+                                                                                       width="50" height="50" /></div>
+                    <div class="card-review-name">Евгений Александрович</div>
+                    <div class="card-review-date">Начальник СБ ООО «Миллениум»</div>
+                </div>
+                <div class="card-content card-content-padding">
+                    <div id="millenium"><img alt=""  onclick="replaceContentInContainer('millenium', 'https://www.youtube.com/embed/bYw2o3HoXNs', '311px', '182px')"
+                                             src="/img/Screenshot_3.jpg" width="96%"/></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card card-review box-shadow">
+                <div class="card-header card-header-review ">
+                    <div class="card-review-avatar box-shadow align-items-center"><img src="/img/macrocoft-logo.jpg"
+                                                                                       width="50" height="50" /></div>
+                    <div class="card-review-name">Сергей Валерьевич</div>
+                    <div class="card-review-date">Руководитель подразделения ООО «Макрософт»</div>
+                </div>
+                <div class="card-content card-content-padding">
+                    <div id="macrosoft">
+                        <img alt="" onclick="replaceContentInContainer('macrosoft', 'https://www.youtube.com/embed/TGtVUfQv-qA', '300px', '135px')"
+                                             src="/img/Screenshot_4.jpg" width="96%" class=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card card-review box-shadow">
+                <div class="card-header card-header-review ">
+                    <div class="card-review-avatar box-shadow align-items-center"><img src="/img/silix-logo.png"
+                                                                                       width="50" height="50" /></div>
+                    <div class="card-review-name">Шаруди Магомедович</div>
+                    <div class="card-review-date">Директор ООО «СИЛИКС ТРАНСАВТО»</div>
+                </div>
+                <div class="card-content card-content-padding" style="font-style: italic">
+                    Благодаря программе, диспетчер может контролировать транспорт на
+                    всей территории РФ, что позволило исключить нарушения при эксплуатации
+                    транспорта, сократить расходы на топливо (до 25%), повысить дисциплину труда
+                    водителей.
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card card-review box-shadow">
+                <div class="card-header card-header-review ">
+                    <div class="card-review-avatar box-shadow align-items-center"><img src="/img/kazanExpress.png"
+                                                                                       width="50" height="50" /></div>
+                    <div class="card-review-name">Купцова Е.Э.</div>
+                    <div class="card-review-date">Генеральный директор ООО ЛК "Задень.РУ"</div>
+                </div>
+                <div class="card-content card-content-padding" style="font-style: italic">
+                    Наша компания является Вашим постоянным Клиентом, на протяжении долгого времени сотрудничаем
+                    с Вами. Хотим выразить свою благодарность, очень довольны работой системы ГЛОНАСС. Очень приятно, что Вы
+                    всегда на связи и всегда вежливый персонал! Быстро реагируете на заявки! Спасибо ООО "Ставтрэк", мы рады
+                    сотрудничеству с Вами! Всем рекомендуем!
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="block">
+
+    <div class="block-title block-title-medium text-align-center">Этапы работы</div>
+
+    <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="5" data-slides-per-view="2"
+         class="swiper swiper-init demo-swiper" style="height: 220px">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+                <div class="card  box-shadow">
+                    <div style="background-image:url(img/1q.png)"
+                         class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card  box-shadow">
+                    <div style="background-image:url(img/2q.png)"
+                         class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card  box-shadow">
+                    <div style="background-image:url(img/3q.png)"
+                         class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card  box-shadow">
+                    <div style="background-image:url(img/4q.png)"
+                         class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card  box-shadow">
+                    <div style="background-image:url(img/5q.png)"
+                         class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card  box-shadow">
+                    <div style="background-image:url(img/6q.png)"
+                         class="card-header align-items-flex-end card-whose-problems bold18 margin-horizontal">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="segmented segmented-strong">
+        <button class="button">Создать заявку</button>
+        <button class="button">Узнать стоимость</button>
+        <span class="segmented-highlight"></span>
+    </p>
+
+</div>
+
+<div class="block">
+    <img src="img/news.png" alt="">
+</div>
+
+
+<div class="block-title block-title-medium text-align-center">
+    Остались Вопросы?
+ </div>
+ 
+ <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="5" data-slides-per-view="1"
+      class="swiper swiper-init demo-swiper" style="height: 295px">
+     <div class="swiper-pagination"></div>
+     <div class="swiper-wrapper">
+ 
+         <div class="swiper-slide">
+             <div class="card box-shadow padding">
+                 <div class="card-content margin-top bold15 text-align-center"> <i class="icon f7-icons size-50">phone_circle</i>  Телефон для связи:</div>
+                 <a href="tel:88005054023" class="col button button-fill margin color-orange button-phone">8 800 505 40 23</a>
+                 <a href="tel:88005054023" class="col button button-fill margin-horizontal color-orange button-phone">8 800 505 40 23</a>
+                 <p class="text-align-center text-color-gray margin">Звонок по России бесплатный</p>
+             </div>
+         </div>
+ 
+         <div class="swiper-slide">
+             <div class="card box-shadow padding">
+                 <div class="flex-direction-column card-content display-flex justify-content-center">
+                     <div class="card-header card-whose-problems bold14 text-align-center" style="height: 16vw">
+                         <i class="icon f7-icons size-50">phone_fill_arrow_right</i> Также Вы можете заказать звонок и мы перезвоним в удобное время:
+                     </div>
+                     <div onclick="myApp.showModal('calltoorder', {form_label: 'заказать звонок контакты'});"
+                          class="button button-fill color-orange margin button-phone" id="contacts-button-call">Заказать звонок</div>
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="swiper-slide">
+             <div class="card box-shadow padding">
+                 <div class="flex-direction-column card-content display-flex justify-content-center">
+                     <div class="card-header card-whose-problems bold14 text-align-center" style="height: 16vw">
+                         <i class="icon f7-icons size-50">chat_bubble_text</i> Или напишите нам в любой мессенджер на выбор:
+                     </div>
+                 </div>
+ 
+                 <a href="whatsapp://send?phone=+79187908360" class="button button-fill button-messenger color-orange"><i class="icon icon-whatsApp margin-right"></i> WhatsApp</a>
+                 <a href="viber://chat?number=+79187908360" class=" button button-fill button-messenger color-orange"><i class="icon icon-viber margin-right"></i>Viber</a>
+                 <a href="tg://resolve?domain=stavtrack_111" class=" button button-fill button-messenger color-orange"><i class="icon icon-telegram margin-right"></i>Telegram</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+ <div class="list accordion-list no-margin-bottom">
+     <ul class="">
+         <li class="accordion-item"><a class="item-content item-link bg-color-lightgray" href="#">
+                 <div class="item-inner">
+                     <div class="item-title display-flex flex-direction-row align-items-center">
+                         <p class="no-margin">  <i class="icon f7-icons size-50 margin-right">envelope</i>Контакты</p>
+                     </div>
+                 </div>
+             </a>
+             <div class="accordion-item-content">
+                 <div class="block bg-color-lightgray">
+ 
+                     Адрес: <span class="postal-code">355044</span>,
+                     <span class="region">Ставропольский край</span>,<span class="locality">
+                             <br>
+                               г. Ставрополь</span>,<span class="street-address">Кулакова 18</span>
+                     <br>
+ 
+                     <span>График работы:
+                            
+                             Пн — Пт с 5:00 до 19:00
+                         
+                         </span><br>
+ 
+                     <a class="email external" href="/contacts.html">Все наши адреса</a>
+ 
+                     <p> Тел. <span class="tel zphone">8 8652 070070</span></p>
+                     <p>  E-mail: <a class="email" href="mailto:info@stavtrack.ru">info@stavtrack.ru</a></p>
+ 
+                 </div>
+ 
+             </div>
+         </li>
+     </ul>
+ </div>
+ 
+ <div class="block bg-color-lightgray no-margin-vertical text-align-center padding">
+     <div class="ofertoInfo">Copyright © 2011-2022 | www.stavtrack.ru | Информация, представленная на сайте,
+         <br> не является публичной офертой |
+         <br><a class="external" style="color: #B1B5BC" href="/politika-konfidencialnosti.html">Политика обработки персональных данных</a></div>
+ </div>
+ 
+ 
+
+    
+            
+
             <div class="sheet-modal sheet-modal-top my-sheet-top">
               <div class="toolbar toolbar-bottom">
                 <div class="toolbar-inner">
@@ -1089,14 +1711,27 @@
                   <div class="right"><a class="link sheet-close" href="#">Done</a></div>
                 </div>
               </div>
-
+            </div>
+            
+        
+        
+        
+            
+        
+        
+        
+            </div>
 
             </div>
-          </div>
-        </div>
+            </div>
+            </div>
+            
+
+        
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="framework7-bundle.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="my-app.js"></script>
-  </body>
+
+</body>
 </html>
