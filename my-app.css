@@ -284,4 +284,11 @@ i.icon.icon-telegram {
   justify-content: center;
 }
 
+.why-icon {
+  font-size: 20px;
+  margin: 10px auto;
+  display: flex;
+}
+
+
 
